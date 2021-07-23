@@ -1,5 +1,10 @@
 {
     "python.pythonPath": "/usr/local/bin/python3",
 
-    "python.autoComplete.extraPaths": ["./Python"]
+    "python.autoComplete.extraPaths": [
+        "./Python"
+    ],
+    "python.analysis.extraPaths": [
+        "./Python"
+    ]
 }
