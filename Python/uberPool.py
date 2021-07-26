@@ -1,0 +1,10 @@
+from car import Car
+
+class UbePool(Car):
+    brand = str
+    model = str
+
+    def __init__(self, license, driver,model,brand):
+        super().__init__(license, driver)
+        self.brand = brand
+        self.model = model
