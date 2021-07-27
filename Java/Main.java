@@ -1,34 +1,19 @@
 package Java;
 
-class Main  {
+class Main {
     public static void main(String[] args) {
-        System.out.println("Hola mundo");
+        System.out.println("Hola Mundo");
+        UberX uberX = new UberX("AMQ123", new Account("Andres Herrera", "AND123"), "Chevrolet", "Sonic");
+        uberX.setPassenger(4);
+        uberX.printDataCar();
 
-        //Creacion de primer constructor 
-        Car car = new Car( "AMQ123", new Account("Javier Ramirez", "10234135","@gmail.com","123"));
-        car.passenger = 4;
-        car.printDataCar();
-        //car.license = "AMQ123";
-        //car.driver = "Javier Ramirez";
-       
+        UberVan uberVan = new UberVan("FGH345", new Account("Andres Herrera", "AND123"));
+        uberVan.setPassenger(6);
+        uberVan.printDataCar();
 
-        //Creacion de segundo constructor
-        Car car2 = new Car("ARJ450", new Account("Andrea Ramirez", "10234135","@gmail.com","123"));
-        
-        //car2.license = "ARJ450";
-        //car2.driver = "Andrea Rodriguez";
-        car2.passenger = 3;
-        car2.printDataCar();
-        //System.out.println("Car License: " + car2.license);
-
-        User user = new User("Pepe", "1234", "gmail.com", "password");
-        user.printDataAccount();
-
-
-        
-    
+        /*Car car2 = new Car("QWE567", new Account("Andrea Herrera", "ANDA876"));
+        car2.passegenger = 3;
+        car2.printDataCar();*/
     }
-
-    
 }
 
